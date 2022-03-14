@@ -1,0 +1,22 @@
+list = []
+my_list,scores,f_list,final_list = [],[],[],[]
+
+if __name__ == '__main__':
+    for _ in range(int(raw_input())):
+        name = raw_input()
+        score = float(raw_input())
+        list = [name,score]
+        my_list.append(list)
+        scores.append(score)
+    
+for x in my_list:
+    for y in x:
+        if y == scores[1]:
+            f_list = [x[0]] 
+            final_list.append(f_list)
+scores = sorted(scores)
+final_list = sorted(final_list)
+for x in final_list:
+    a = x
+    for p in a:
+        print(p)
